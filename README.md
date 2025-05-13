@@ -1,5 +1,3 @@
-
-
 # releases.electronjs.org
 
 This repository contains the code for [https://releases.electronjs.org](https://releases.electronjs.org), which provides release status information for the [Electron](https://github.com/electron/electron) project.
@@ -41,4 +39,3 @@ npm run dev
 ## License
 
 Distributed under the MIT License. See [LICENSE](https://github.com/electron/release-status/blob/main/LICENSE) for details.
-
