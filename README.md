@@ -1,25 +1,44 @@
+
+
 # releases.electronjs.org
 
-This repository contains code for https://releases.electronjs.org, which provides release status information for
-the [Electron](https://github.com/electron/electron) project.
+This repository contains the code for [https://releases.electronjs.org](https://releases.electronjs.org), which provides release status information for the [Electron](https://github.com/electron/electron) project.
 
-## Getting started
+---
+
+## Getting Started
 
 The website is built using [Remix](https://remix.run/).
 
 ### Installation
 
-To run the app locally, install dependencies and run the `dev` script:
+To run the app locally:
 
-```
+```bash
 npm install
 npm run dev
 ```
 
 ### GitHub Authentication
 
-The app pulls release information from GitHub, and local usage (especially going through pages of past releases) may hit the rate limit for anonymous GitHub usage. You can provide a GitHub Personal Access Token (PAT) by setting the `GITHUB_TOKEN` environment variable before running the app locally, which will have higher rate limits.
+The app fetches release data from GitHub. To avoid hitting rate limits for anonymous requests, you can provide a GitHub Personal Access Token (PAT):
+
+1. Generate a PAT on [GitHub](https://github.com/settings/tokens).
+2. Set the `GITHUB_TOKEN` environment variable before running the app:
+
+```bash
+export GITHUB_TOKEN=your_personal_access_token
+```
+
+3. Then start the app:
+
+```bash
+npm run dev
+```
+
+---
 
 ## License
 
-Distributed under the [MIT License](https://github.com/electron/release-status/blob/main/LICENSE).
+Distributed under the MIT License. See [LICENSE](https://github.com/electron/release-status/blob/main/LICENSE) for details.
+
